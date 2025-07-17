@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-01 23:21+0300\n"
+"Language: tr\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+# ----------------------------------------
+# Core
+# ----------------------------------------
+#: core/constants.py:27
+msgid "Invalid credentials"
+msgstr "Geçersiz kimlik bilgisi"
+
+#: core/constants.py:28
+msgid "You do not have permission to perform this action."
+msgstr "Bu işlemi yapmak için izniniz bulunmuyor."
+
+#: core/constants.py:29
+msgid "No matching records found"
+msgstr "Herhangi bir eşleşme bulunamadı"
+
+#: core/constants.py:31
+msgid "Successfully created"
+msgstr "Başarıyla oluşturuldu"
+
+#: core/constants.py:32
+msgid "Successfully deleted"
+msgstr "Başarıyla silindi"
+
+#: core/constants.py:33
+msgid "Successfully updated"
+msgstr "Başarıyla güncellendi"
+
+#: core/constants.py:34
+msgid "Successfully listed"
+msgstr "Başarıyla listelendi"
+
+#: core/constants.py:35
+msgid "Successfully retrieved"
+msgstr "Başarıyla alındı"
+
+#: core/constants.py:37
+msgid "Service request failed"
+msgstr "Servis isteği başarısız"
+
+# ----------------------------------------
+# User Service - Users Auth
+# ----------------------------------------
+#: users_auth/constants.py:12
+msgid "Login successful"
+msgstr "Giriş başarılı"
+
