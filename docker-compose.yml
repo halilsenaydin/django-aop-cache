@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  user-db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: senaydin
+      POSTGRES_PASSWORD: senaydin.
+      POSTGRES_DB: db_user_service
+    volumes:
+      - user_db_data:/var/lib/postgresql/data
+    networks:
+      - django_network
+    ports:
+      - "5433:5432"
+
+  user-service:
+    build:
+      context: ./user-service
+    entrypoint: /app/entrypoint.sh
+    volumes:
+      - ./user-service:/app
+      - ./core:/app/core
+    ports:
+      - "8000:8000"
+    depends_on:
+      - user-db
+      - rabbitmq
+      - redis
+    networks:
+      - django_network
+
+  rabbitmq:
+    image: rabbitmq:3.11-management
+    ports:
+      - "5672:5672" # AMQP port
+      - "15672:15672" # Dashboard
+    environment:
+      RABBITMQ_DEFAULT_USER: rabbit_user
+      RABBITMQ_DEFAULT_PASS: rabbit_pass
+    networks:
+      - django_network
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - django_network
+
+networks:
+  django_network:
+
+volumes:
+  user_db_data:
+

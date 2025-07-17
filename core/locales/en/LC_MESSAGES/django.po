@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-01 23:21+0300\n"
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+# ----------------------------------------
+# Core
+# ----------------------------------------
+#: core/constants.py:27
+msgid "Invalid credentials"
+msgstr "Invalid credentials"
+
+#: core/constants.py:28
+msgid "You do not have permission to perform this action."
+msgstr "You do not have permission to perform this action."
+
+#: core/constants.py:29
+msgid "No matching records found"
+msgstr "No matching records found"
+
+#: core/constants.py:31
+msgid "Successfully created"
+msgstr "Successfully created"
+
+#: core/constants.py:32
+msgid "Successfully deleted"
+msgstr "Successfully deleted"
+
+#: core/constants.py:33
+msgid "Successfully updated"
+msgstr "Successfully updated"
+
+#: core/constants.py:34
+msgid "Successfully listed"
+msgstr "Successfully listed"
+
+#: core/constants.py:35
+msgid "Successfully retrieved"
+msgstr "Successfully retrieved"
+
+#: core/constants.py:37
+msgid "Service request failed"
+msgstr "Service request failed"
+
+# ----------------------------------------
+# User Service - Users Auth
+# ----------------------------------------
+#: users_auth/constants.py:12
+msgid "Login successful"
+msgstr "Login successful"
